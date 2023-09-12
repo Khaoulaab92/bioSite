@@ -1,14 +1,21 @@
 /* Khaoula Azdoud */
-/* 09/06/2023 */
-/* Assignment 6.3: bioSite: Development */
+/* 09/12/2023 */
+/* Assignment 7.2:  Development and GitHub Pages Deployment */
 
 header {
     font-family: 'Norwester', sans-serif;
-	background-color: #000000;
-	text-align: center;
-	height: 150px;
-	position: relative;
+    background-color: #000000;
+    text-align: center;
+    height: 150px;
+    position: relative;
 }
+
+.titre h1 {
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+}
+
 
 .logo {
     width: 150px; 
@@ -17,8 +24,8 @@ header {
 }
 
 .header-content {
-	color: #CBB26A;
-	display: flex;
+    color: #CBB26A;
+    display: flex;
     align-items: right;
     gap: 30px;
 }
@@ -46,23 +53,24 @@ header {
 
 
 header h1{
-	margin-top: 3.78%;
+    margin-top: 3.78%;
 }
 
 .titre {
+    color: #CBB26A;
+    font-weight: bold;
     font-size: 36px;
     z-index: 2;
     text-align: left; 
     position: absolute; 
-    top: 50%; 
+    top: 55%; 
     left: 12%; 
     font-family: 'Norwester', sans-serif;
 }
 
 .homepicture {
-    width: 840px;
-    height: 624px;
-    background-color: #CBB26A;
+    width: 830px;
+    height: 600px;
     position: absolute;
     top: 25%;
     left: 35%; 
@@ -71,19 +79,19 @@ header h1{
 
 .homelink a {
     font-weight: bold;
-    color: #000000;
+    color: #CBB26A;
     font-family: 'Norwester', sans-serif;
 }
 
 .homelink {
     position: absolute;
-    bottom: -40px;
-    right: 50px;
+    bottom: -1px;
+    right: 33px;
 }
 
 .social-media {
     position: absolute;
-    top: 45%;
+    top: 48%;
     right: 36px; 
     display: flex;
     flex-direction: column; 
@@ -93,7 +101,7 @@ header h1{
 .social-media img {
     width: 50px; 
     height: 50px; 
-    margin-bottom: 10px; 
+    margin-bottom: 6px; 
 }
 
 .social-media img:hover {
@@ -122,43 +130,43 @@ header h1{
 }
 
 .aboutme-title {
-    margin-left: 80px;
-    margin-top: 100px;
+    margin-left: 95px;
+    margin-top: 175px;
     font-family: 'Norwester', sans-serif;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .aboutme-paragraph {
-    font-size: 25px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-left: 130px;
     font-family: 'Norwester', sans-serif;
 }
 
 .aboutme-background {
     width: 80%;
-    height: 1500px;
+    height: 1380px;
     background-color: #CBB26A;
     position: absolute;
-    top: 28%; 
+    top: 34%; 
     left: 3%; 
     z-index: -1; 
 }
 
 .aboutme-picture {
-    width: 530px; 
-    height: 700px; 
+    width: 560px; 
+    height: 800px; 
     background-color: #E5D9B6;
     position: absolute;
-    top: 37%; 
-    left: 60%; 
+    top: 42%; 
+    left: 58%; 
     
 }
 
 .hobbies-title {
     font-weight: bold;
-    margin-left: 15px;
+    margin-left: 30px;
     font-family: 'Norwester', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .cards {
@@ -177,7 +185,7 @@ header h1{
 }
 
 .card1 {
-  top: 37%; 
+  top: 38%; 
   left: 16%;
 }
 
@@ -187,7 +195,7 @@ header h1{
 }
 
 .card3 {
-  top: 137%; 
+  top: 137.5%; 
   left: 16%;  
 }
 
@@ -201,7 +209,7 @@ header h1{
 }
 
 footer {
-	text-align: center;
+    text-align: center;
     background-color: #000000;
     position: absolute;
     bottom: 0;
