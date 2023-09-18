@@ -72,7 +72,7 @@ header h1{
     width: 830px;
     height: 600px;
     position: absolute;
-    top: 25%;
+    top: 27%;
     left: 35%; 
     
 }
@@ -113,7 +113,7 @@ header h1{
   transition: 0.3s;
   width: 655px;
   position: absolute;
-  top: 115%; 
+  top: 125%; 
   font-family: 'Norwester', sans-serif;
 }
 
@@ -155,7 +155,6 @@ header h1{
 .aboutme-picture {
     width: 560px; 
     height: 800px; 
-    background-color: #E5D9B6;
     position: absolute;
     top: 42%; 
     left: 58%; 
@@ -216,6 +215,6 @@ footer {
     height: 75px;
     width: 99%;
     color: #FFFFFF;
-    top: 240%;
+    top: 260%;
     font-family: 'Norwester', sans-serif;
 }
