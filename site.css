@@ -8,6 +8,7 @@ header {
     text-align: center;
     height: 150px;
     position: relative;
+    width: 100%;
 }
 
 .titre h1 {
@@ -26,7 +27,6 @@ header {
 .header-content {
     color: #CBB26A;
     display: flex;
-    align-items: right;
     gap: 30px;
 }
 
@@ -63,18 +63,21 @@ header h1{
     z-index: 2;
     text-align: left; 
     position: absolute; 
-    top: 55%; 
-    left: 12%; 
+    margin-top: 180px; 
     font-family: 'Norwester', sans-serif;
 }
 
 .homepicture {
-    width: 830px;
-    height: 600px;
-    position: absolute;
-    top: 27%;
-    left: 35%; 
-    
+    position: absolute;    
+    margin-top: 50px;
+    left: 28%; 
+    height: auto;
+}
+
+@media screen and (max-width: 940px) {
+    .homepicture {
+        left: 10%; 
+    }
 }
 
 .homelink a {
@@ -84,18 +87,25 @@ header h1{
 }
 
 .homelink {
-    position: absolute;
-    bottom: -1px;
-    right: 33px;
+    text-align: right;
+    top: 536px;  
+    position: relative;
+}
+
+@media only screen and (max-width: 940px) {
+    .homelink {
+        top: 350px;  
+        position: relative;
+    }
 }
 
 .social-media {
     position: absolute;
-    top: 48%;
-    right: 36px; 
+    right: 60px; 
     display: flex;
     flex-direction: column; 
     align-items: flex-end; 
+    margin-top: 95px;
 }
 
 .social-media img {
@@ -104,110 +114,177 @@ header h1{
     margin-bottom: 6px; 
 }
 
+@media screen and (max-width: 940px) {
+    .social-media { 
+        right: 5px; 
+        transform: scale(0.8); 
+    }
+
+    .social-media img {
+        width: 40px; 
+        height: 40px; 
+        margin-bottom: 4px; 
+    }
+}
+
 .social-media img:hover {
     background-color: #CBB26A;
-}
-
-.homecard1, .homecard2 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 655px;
-  position: absolute;
-  top: 125%; 
-  font-family: 'Norwester', sans-serif;
-}
-
-.homecard1 { 
-  left: 2.5%;
-}
-
-.homecard2 {
-  right: 2.5%;  
 }
 
 .homecard1:hover, .homecard2:hover {
   box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
 }
 
+.home1 {
+    float: left;
+    width: 50%;
+}
+
+.home2 {
+    float: right;
+    width: 50%;
+}
+
+@media screen and (max-width: 620px) {
+  .home1 {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .home2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.homecard1 {
+    margin: 750px 50px 40px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.homecard2 {
+    margin: 750px 50px 40px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .aboutme-title {
-    margin-left: 95px;
-    margin-top: 175px;
-    font-family: 'Norwester', sans-serif;
     font-size: 35px;
+    margin-top: 50px;
+    margin-left: 95px;
+    font-family: 'Norwester', sans-serif;
+    background-color: #CBB26A;
+    padding: 1%;
+    margin-right: 82px;
 }
 
 .aboutme-paragraph {
-    font-size: 30px;
-    margin-left: 130px;
+    margin-top: -70px;
+    font-size: 32px;
+    margin-left: 95px;
     font-family: 'Norwester', sans-serif;
-}
-
-.aboutme-background {
-    width: 80%;
-    height: 1380px;
     background-color: #CBB26A;
-    position: absolute;
-    top: 34%; 
-    left: 3%; 
-    z-index: -1; 
+    padding: 2%;
+    margin-right: 82px;
 }
 
-.aboutme-picture {
-    width: 560px; 
-    height: 800px; 
-    position: absolute;
-    top: 42%; 
-    left: 58%; 
-    
+.aboutme-paragraph img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hobbies-title {
-    font-weight: bold;
-    margin-left: 30px;
+    margin-left: 40px;
     font-family: 'Norwester', sans-serif;
-    font-size: 25px;
+    font-size: 10px;
+    padding: 1%;
 }
 
-.cards {
-    font-family: 'Norwester', sans-serif;
+* {
+  box-sizing: border-box;
 }
+
 
 .card1:hover, .card2:hover, .card3:hover, .card4:hover {
   box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
 }
 
-.card1, .card2, .card3, .card4 {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 480px;
-  position: absolute;
+.firstCards {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+
+
+}
+.secondCards {
+    float: right;
+    width: 50%;
+    padding: 0 10px;
+
+
+}
+@media screen and (max-width: 620px) {
+  .firstCards {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .secondCards {
+    width: 100%;
+    display: block;
+  }
 }
 
 .card1 {
-  top: 38%; 
-  left: 16%;
+    margin: 0px 50px 40px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card2 {
-  top: 40%; 
-  left: 52%;  
+    margin: 0px 50px 40px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card3 {
-  top: 137.5%; 
-  left: 16%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 35px 50px 40px 50px;
 }
 
 .card4 {
-  top: 142%; 
-  left: 52%;  
+    margin: 0px 50px 40px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
   padding: 2px 16px;
+  font-family: 'Norwester', sans-serif;
 }
 
-footer {
+#homeFooter {
+    text-align: center;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+    color: #FFFFFF;
+    top: 250%;
+    font-family: 'Norwester', sans-serif;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  #homeFooter {
+    width: 100%;
+    display: block;
+    top: 437%;
+  }
+}
+
+#aboutMeFooter {
     text-align: center;
     background-color: #000000;
     position: absolute;
@@ -215,6 +292,36 @@ footer {
     height: 75px;
     width: 99%;
     color: #FFFFFF;
-    top: 260%;
+    top: 220%;
     font-family: 'Norwester', sans-serif;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  #aboutMeFooter {
+    width: 100%;
+    display: block;
+    top: 160%;
+  }
+}
+
+#hobbiesFooter {
+    text-align: center;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    height: 75px;
+    width: 99%;
+    color: #FFFFFF;
+    top: 280%;
+    font-family: 'Norwester', sans-serif;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  #hobbiesFooter {
+    width: 100%;
+    display: block;
+    top: 439%;
+  }
 }
